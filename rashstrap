@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+echo ""
+echo "Starting a new project..."
+echo -n "Have a name in mind? "
+read project_name
+
+echo "Fantastic. Cloning resources for '$project_name'."
+echo ""
+
+git clone https://github.com/calebrash/rashstrap.git $project_name
+cd $project_name
+git checkout strap-resources
+rm -rf .git
+
+echo ""
+echo "Installing dependencies."
+npm install
+
+echo ""
+echo "All done! Happy programming."
