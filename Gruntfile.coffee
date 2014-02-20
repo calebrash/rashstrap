@@ -26,13 +26,13 @@ module.exports = (grunt) ->
 
     watch:
       default:
-        files: ["media/coffee/*", "media/less/*"]
+        files: ["src/coffee/*", "src/less/*"]
         tasks: ["coffee", "less:dev"]
       coffee:
-        files: "media/coffee/*",
+        files: "src/coffee/*",
         tasks: ['coffee']
       less:
-        files: "media/less/*",
+        files: "src/less/*",
         tasks: ['less']
 
   grunt.loadNpmTasks "grunt-contrib-coffee"
