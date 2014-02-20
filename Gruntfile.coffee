@@ -27,7 +27,7 @@ module.exports = (grunt) ->
     watch:
       default:
         files: ["src/coffee/*", "src/less/*"]
-        tasks: ["coffee", "less:dev"]
+        tasks: ["coffee", "less:default"]
       coffee:
         files: "src/coffee/*",
         tasks: ['coffee']
